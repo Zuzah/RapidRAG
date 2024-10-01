@@ -23,9 +23,16 @@ uvicorn app.main:app --reload
 ```
 
 ### Prerequisites
-Make sure you have all the dependencies installed. You can do this by running:
+Make sure you have all the dependencies installed by running each of the following commands:
+
+1. Python Dependencies
 ```bash
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
+```
+
+2. CI/CD Dependencies:
+```bash
+pre-commit install
 ```
 
 ## Setting Up Environment Variables
@@ -38,6 +45,3 @@ The app relies on .env to load various values. An`.env.example` is provided to l
     ```
 
 2. Edit the `.env` file and set the correct values (chosen by your team, or referred in a shared private document)
-
-
-
